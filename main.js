@@ -15,16 +15,6 @@ var commonWords = [
 // To filter down to words of min. 3 letters
 var newWords = commonWords.filter(item => item.length > 3);
 
-// Other way to write this code: 
-// var newWords = [];
-// for (var i = 0; i<commonWords.length; i++) {
-//   if (commonWords[i].length > 3){
-//     newWords.push(commonWords[i]);
-//   }
-// }
-// show the new list of words of min. 3 letters: 
-    // console.log(newWords);
-
 // To select a random word in new array of word
 var word = newWords[Math.floor(Math.random()*newWords.length)].split("");
 
@@ -37,9 +27,6 @@ const blank = word.map(n => "_")
   //console.log(word, blank)
 
 document.getElementById('word').innerHTML = blank.join(" ");
-
-// set up the number of chances the user has
-
 
 // variable with alphatical letters - split in individual strings
 const alphabet = "abcdefghijklmnopqrstuwxyz"
@@ -54,7 +41,6 @@ var alpha = letters.map(l => (
 )).join('')
 
 document.getElementById('alphabet').innerHTML = alpha
-
 
 
 let guessed = []
@@ -101,5 +87,6 @@ function guess(l) {
 }
 
 function gameOver () {
-  $("#game").html("<h1> HUNG! </h1>")
+  $("#game").html(`<h1> HUNG! </h1>`)
+  $("#reso").html(`The word was "${word.join("")}"!`)
 }
