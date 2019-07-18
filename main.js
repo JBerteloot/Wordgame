@@ -34,7 +34,7 @@ $("#chances").html(chancesLeft)
 // set up the _ for each letter of any word
 const blank = word.map(n => "_")
 
-  console.log(word, blank)
+  //console.log(word, blank)
 
 document.getElementById('word').innerHTML = blank.join(" ");
 
@@ -90,7 +90,7 @@ function guess(l) {
     if (chancesLeft >1) {
       chancesLeft -= 1;
       $("#chances").html(chancesLeft);
-      console.log(chancesLeft, l);
+      //console.log(chancesLeft, l);
     } else {
       gameOver()
       $("#start").on("click", function () {
