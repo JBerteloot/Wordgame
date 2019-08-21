@@ -1,3 +1,7 @@
+#### Check out live demo of this app at: https://jberteloot.github.io/Wordgame/
+
+
+
 # Wordgame
 
 ## Description
