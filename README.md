@@ -3,7 +3,7 @@
 
  
 
-# Wordgame: Assignment instructions:
+# Wordgame: Assignment instructions
 
 ## Description
 
